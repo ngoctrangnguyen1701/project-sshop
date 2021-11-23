@@ -20,7 +20,7 @@ const ShopSchema = new Schema<ShopDoc>({
   coverImage: defaultType.string,
   description: defaultType.string,
   registerDate: defaultType.string,
-  onlineTime: defaultType.number,
+  //onlineTime: defaultType.number,
 });
 
 export default ShopSchema;

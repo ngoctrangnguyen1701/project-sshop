@@ -22,9 +22,9 @@ export default class ShopCallback {
   onlineTime: defaultType.number, */
   static async create(req: Request, res: Response) {
     try {
-      const { name, avatar } = req.body
-
-      const payload = await ShopModel.create({ name, avatar });
+      //const { name, avatar, coverImage, description, registerDate } = req.body
+      //const payload = await ShopModel.create({ name, avatar });
+      const payload = await ShopModel.create(req.body);
 
       return res.json({ success: true, data: payload });
     } catch (err) {
